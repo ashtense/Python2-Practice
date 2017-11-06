@@ -14,10 +14,12 @@ print y
 # sometimes qualifiers convert values on some basis. Boolean if provided on integer qualifier i.e. %d will convert it into 1 or 0
 z = "This is boolean check %r"
 hilarious = False
+#This is also a great way to shorten your code width. Define the string in some other variable with appropriate qualifier and do the replacement later on. Great.
 print z % hilarious
 
 # this is great. I can combine stuff from different strings along with their qualifiers spot on.
-print z % hilarious + "." + x
+geronimo = " Dude here you go %d"
+print z % hilarious + "." + x + geronimo % 7
 
 print "Hello %s" % "Ashwani"
 print "Hello " * 3

@@ -17,7 +17,8 @@ vegetables = 6
 total = fruits + vegetables
 mashedStuf = fruits * vegetables
 print total
-print "meshed stuff is", mashedStuf
+# This is string concatenation. Totally different from value replacement via. variables.
+print "meshed stuff is ", mashedStuf
 
 # Lets talk about variable replacement
 name = "Ashwani Solanki"
@@ -33,3 +34,4 @@ print "My eyes are %s and hair are %s" % (eyes_color, hair_color)
 print "Adding my height i.e. %d and age i.e. %d, I get %d" % (height, age, height + age)
 # Lets check %r qualifier. This is great. Let it be string or number everything gets printed.
 print "Checking %r" % height
+# but the big guys say to use %r only for debugging purposes.
