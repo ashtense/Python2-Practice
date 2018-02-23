@@ -22,6 +22,7 @@ geronimo = " Dude here you go %d"
 print z % hilarious + "." + x + geronimo % 7
 
 print "Hello %s" % "Ashwani"
+# any print action can be repeated using mathematical * at the end.
 print "Hello " * 3
 
 print "A quick brown fox jumps \nover the lazy dog."
