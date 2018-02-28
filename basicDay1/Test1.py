@@ -63,7 +63,7 @@ def secret_formula(started):
 
 
 start_point = 10000
-beans, jars, crates == secret_formula(start-point)
+jelly_beans, jars, crates == secret_formula(start_point)
 
 print "With a starting point of: %d" % start_point
 print "We'd have %d jeans, %d jars, and %d crates." % (beans, jars, crates)
@@ -71,7 +71,7 @@ print "We'd have %d jeans, %d jars, and %d crates." % (beans, jars, crates)
 start_point = start_point / 10
 
 print "We can also do that this way"
-print "We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_pont
+print "We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_point)
 
 
 sentence = "All good \tthings come to those who weight."
@@ -81,11 +81,11 @@ sorted_words = sort_words(words)
 
 print_first_word(words)
 print_last_word(words)
-.print_first_word(sorted_words)
+print_first_word(sorted_words)
 print_last_word(sorted_words)
 sorted_words = sort_sentence(sentence)
-prin sorted_words
+print sorted_words
 
 print_irst_and_last(sentence)
 
-   print_first_a_last_sorted(senence)
+print_first_and_last_sorted(sentence)
