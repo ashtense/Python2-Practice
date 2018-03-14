@@ -24,7 +24,7 @@ elif door_selected == 2:
     if witch_option == 1:
         print "Witch will trick you and take your soul. Good luck"
     elif witch_option == 2:
-        print "Smart option to select. Take care"
+        print "Smart option to select. Take care" 
 
 else:
     print "Are you nuts? I just told you there are only two doors."
