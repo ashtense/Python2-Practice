@@ -54,6 +54,7 @@ def cthulhu_room():
 
 def dead(why):
     print why, "Good job!"
+    # exit with 0 is a good exit. With 1 is a bad/error exit.
     exit(0)
 
 
