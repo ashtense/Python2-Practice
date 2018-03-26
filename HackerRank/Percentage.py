@@ -1,5 +1,6 @@
-	def get_precent(base_amount, percentage):
-	    return (base_amount / 100) * percentage
+def get_precent(base_amount, percentage):
+    return (base_amount / 100) * percentage
+
 
 meal_cost = 10.25
 tip_percent = 17
