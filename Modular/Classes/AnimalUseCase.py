@@ -46,6 +46,7 @@ satan = Cat("Satan")
 mary = Person("Mary")
 mary.pet = satan
 frank = Employee("Frank", 120000)
-frank.pet = satan
+frank.pet = rover
 
-print "%r \n%r" % (frank.hasTail, mary.pet.name)
+# here I access hasTail variable from person type in frank object
+print "%r \n%r \n%r" % (frank.hasTail, mary.pet.name, frank.pet.name)
