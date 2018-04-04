@@ -1,15 +1,23 @@
-incomming_decimal = 13
-remaining_dividend = 0
-binary_place = []
+n = 439
+lst_binary = []
 
 while True:
-    binary_place.append(incomming_decimal % 2)
-    if incomming_decimal != 0:
-        incomming_decimal = incomming_decimal / 2
+    lst_binary.append(n % 2)
+    if n != 0:
+        n = n / 2
     else:
         break
-binary_place.reverse()
-print binary_place
 
-for bit_position in range(0, len(binary_place)):
-    print binary_place[bit_position]
+consecutive_counter = 1
+highest_counter = 0
+
+for bit_position in range(0, len(lst_binary)):
+    if lst_binary[bit_position] is 1 and bit_position < (len(lst_binary) - 1):
+        if lst_binary[bit_position] == lst_binary[bit_position + 1]:
+            consecutive_counter += 1
+    elif lst_binary[bit_position] == 0:
+        consecutive_counter = 1
+    if consecutive_counter > highest_counter:
+        highest_counter = consecutive_counter
+
+print highest_counter
