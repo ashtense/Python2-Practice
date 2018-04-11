@@ -1,4 +1,7 @@
 # -- coding: utf-8 --
+print 4 + 2 \
+- 1
+
 print "Hello World!"
 print "Now I will do maths in python"
 print 45 * 2
