@@ -6,3 +6,7 @@ self : Inside the functions in a class, self is a variable for the instance/obje
 inheritance : The concept that one class can inherit traits from another class, much like you and your parents. composition : The concept that a class can be composed of other classes as parts, much like how a car has wheels. attribute : A property classes have that are from composition and are usually variables.
 is-a : A phrase to say that something inherits from another, as in a Salmon is-a Fish.
 has-a : A phrase to say that something is composed of other things or has a trait, as in a Salmon has-a mouth.
+
+
+Pythong class structure fuck up -> for ex: class Animal(object):
+A class inherits from the class named object to make a class but it's not an object really it's a class, but do not forget to inherit from object.
