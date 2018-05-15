@@ -1,7 +1,7 @@
 class MyStuff(object):
 
     def __init__(self):
-        print "init method gets called first"
+        print "init method gets called first like a constructor call"
         self.tangerine = "And now we have a class"
 
     def apple(self):
