@@ -16,7 +16,7 @@ class Child_class(Parent_class):
 with python constructors"
         super(Child_class, self).__init__(parent_class_variable)
         print "This is the end of the child class"
-        # below piece of code doesn't work. maybe my understanding is\
+        # below piece of code doesn't work. maybe my understanding is
         # a bit wrong. lets see if the book provides such a solution
         super(Child_class, self).experimental_method
 
