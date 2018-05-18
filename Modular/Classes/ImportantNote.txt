@@ -10,3 +10,6 @@ has-a : A phrase to say that something is composed of other things or has a trai
 
 Pythong class structure fuck up -> for ex: class Animal(object):
 A class inherits from the class named object to make a class but it's not an object really it's a class, but do not forget to inherit from object.
+
+is-a: shows inheritance... ex: Salmon is a Fish
+has-a: shows composition... ex: Car has wheels

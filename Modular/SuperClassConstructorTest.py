@@ -10,6 +10,8 @@ class Parent_class(object):
 
 class Child_class(Parent_class):
 
+    # Inside the functions in a class, self is a variable \
+    # for the instance/object being accessed.
     def __init__(self):
         print "First you're inside the child class"
         parent_class_variable = "Hello darling, my first experiment \
