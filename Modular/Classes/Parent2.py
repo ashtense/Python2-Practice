@@ -8,6 +8,7 @@ class Child(Parent):
 
     def altered(self):
         print "Child altered"
+        # this is how we call a method from parent class.
         super(Child, self).altered()
         print "Child after parent alteration"
 
