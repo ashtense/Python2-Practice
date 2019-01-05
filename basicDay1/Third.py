@@ -3,7 +3,7 @@ Created on Oct 6, 2017
 
 @author: solanka
 '''
-#Comma(,) at the end of print stops from going to the next line
+# Comma(,) at the end of print stops from going to the next line
 # print "What's your name?",
 # name = raw_input()
 # print "What do you do?",
