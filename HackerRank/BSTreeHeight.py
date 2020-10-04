@@ -27,7 +27,7 @@ class Solution:
             if(lDepth > rDepth):
                 return lDepth + 1
             else:
-                print "Right %d, Left %d" %(rDepth,lDepth)
+                print("Right %d, Left %d" %(rDepth,lDepth))
                 return rDepth + 1
 
 
@@ -40,4 +40,4 @@ for i in arrData:
     data=int(i)
     root=myTree.insert(root,data)
 height=myTree.getHeight(root)
-print height
+print(height)

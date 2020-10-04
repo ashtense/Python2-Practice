@@ -4,6 +4,6 @@ def factorial(n):
     return n
 
 
-n = int(raw_input().strip())
+n = 3
 result = factorial(n)
-print result
+print(result)

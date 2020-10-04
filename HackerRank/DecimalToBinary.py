@@ -1,12 +1,7 @@
-n = 439
-lst_binary = []
+num = 564987
+lst_binary = [int(x) for x in str(bin(num).replace("0b",""))]
+print(lst_binary)
 
-while True:
-    lst_binary.append(n % 2)
-    if n != 0:
-        n = n / 2
-    else:
-        break
 
 consecutive_counter = 1
 highest_counter = 0
@@ -20,4 +15,4 @@ for bit_position in range(0, len(lst_binary)):
     if consecutive_counter > highest_counter:
         highest_counter = consecutive_counter
 
-print highest_counter
+print(highest_counter)
