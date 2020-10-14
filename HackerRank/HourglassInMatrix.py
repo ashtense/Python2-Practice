@@ -1,8 +1,8 @@
 import sys
 
 arr = []
-for arr_i in xrange(6):
-    arr_temp = map(int, raw_input().strip().split(' '))
+arr_temp = [1,0,1,0,1,2]
+for index in range(6):
     arr.append(arr_temp)
 
 max_sum = 0
@@ -16,4 +16,4 @@ for row_num in range(0, 4):
         if hour_glass_sum > max_sum:
             max_sum = hour_glass_sum
 
-print max_sum
+print(max_sum)
