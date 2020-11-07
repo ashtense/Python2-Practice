@@ -1,3 +1,5 @@
+from collections import deque
+
 class Node:
     def __init__(self,data):
         self.right=self.left=None
@@ -18,26 +20,25 @@ class Solution:
                 root.right=cur
         return root
 
-    def getHeight(self,root):
-        if(root == None):
-            return -1
-        else:
-            lDepth = self.getHeight(root.left)
-            rDepth = self.getHeight(root.right)
-            if(lDepth > rDepth):
-                return lDepth + 1
-            else:
-                print("Right %d, Left %d" %(rDepth,lDepth))
-                return rDepth + 1
+    def levelOrder(self,root):
+        queue = deque()
+        queue.append(root)
+        while(len(queue)>0):
+            node = queue.popleft()
+            print(node.data, end =" ")
 
+            if node.left is not None:
+                queue.append(node.left)
 
+            if node.right is not None:
+                queue.append(node.right)               
+        
 
-arrData = [1,5,3,6,9]
+arrData = [3,5,4,7,2,1]
 # arrData = [1]
 myTree=Solution()
 root=None
 for i in arrData:
     data=int(i)
     root=myTree.insert(root,data)
-height=myTree.getHeight(root)
-print(height)
+myTree.levelOrder(root)
