@@ -10,7 +10,6 @@ def sort(arrayToSort):
                 swapCounter += 1
     return swapCounter
 
-arr = [2,1,3]
-print("Array is sorted in %d swaps."%sort(arr))
-print("First Element: %d" % arr[0])
-print("Last Element: %d" % arr[len(arr)-1])
+arr = [20,35,-15,7,55,1,-22]
+sort(arr)
+print(arr)
